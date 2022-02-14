@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/App.css";
 import App from "./App";
 
-const Welcome= ({props})=>{
+const Welcome= ({name})=>{
     let sayhi=`hey ${name}!`;
     let greetmessage= `Welcome to Newton School.`
     return(
@@ -13,7 +13,7 @@ const Welcome= ({props})=>{
   </div>  );
 }
 
-functionExample=()=>{
+const functionExample=()=>{
 return(
     <Welcome/>
     );
