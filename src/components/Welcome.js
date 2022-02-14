@@ -1,11 +1,23 @@
 import React from "react";
+import "../styles/App.css";
+import App from "./App";
 
-function Welcome(props){
+const Welcome= ({props})=>{
+    let sayhi=`hey ${name}!`;
+    let greetmessage= `Welcome to Newton School.`
     return(
-        <>
-<h1>Hey {props.name}!</h1>
-<h2>Welcome to Newton School.</h2>
+        <div>
+<h1>{sayhi}</h1>
+<h2>{greetmessage}</h2>
 
-  </>  );
+  </div>  );
 }
+
+functionExample=()=>{
+return(
+    <Welcome/>
+    );
+
+}
+
 export default Welcome;
