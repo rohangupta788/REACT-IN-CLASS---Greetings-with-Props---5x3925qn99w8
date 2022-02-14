@@ -1,9 +1,7 @@
 import React from "react";
-import "../styles/App.css";
-import App from "./App";
 
-const Welcome= ({name})=>{
-    let sayhi=`hey ${name}!`;
+function Welcome(props){
+    let sayhi=`hey ${props.name}!`;
     let greetmessage= `Welcome to Newton School.`
     return(
         <div>
@@ -13,11 +11,6 @@ const Welcome= ({name})=>{
   </div>  );
 }
 
-const functionExample=()=>{
-return(
-    <Welcome/>
-    );
 
-}
 
 export default Welcome;
